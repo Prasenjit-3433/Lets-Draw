@@ -137,27 +137,6 @@ This is an example of how to list things you need to use the software and how to
 
 * First of all, we need to gather all `functional requirements` of the Kanban Board. kanban boards can be broken down into five components: `Visual signals`, `columns`, `work-in-progress` limits, a `commitment point`, and a `delivery point`.
 
-<details>
-  <summary>More About Each Component</summary>
-  <ol>
-    <li>
-      <p>Visual Signals — One of the first things you’ll notice about a kanban board are the visual cards (stickies, tickets, or otherwise). Kanban teams write all of their projects and work items onto cards, usually one per card. For agile teams, each card could encapsulate one user story. Once on the board, these visual signals help teammates and stakeholders quickly understand what the team is working on.</p>
-    </li>
-    <li>
-      <p>Columns — Another hallmark of the kanban board are the columns. Each column represents a specific activity that together compose a “workflow”. Cards flow through the workflow until completion. Workflows can be as simple as “Backlog,” “In Progress,” “Complete,” or "On Hold".</p>
-    </li>
-    <li>
-      <p>Work In Progress (WIP) Limits — WIP limits are the maximum number of cards that can be in one column at any given time. A column with a WIP limit of three cannot have more than three cards in it. When the column is “maxed-out” the team needs to swarm on those cards and move them forward before new cards can move into that stage of the workflow. These WIP limits are critical for exposing bottlenecks in the workflow and maximizing flow. WIP limits give you an early warning sign that you committed to too much work.</p>
-    </li>
-    <li>
-      <p>Commitment point — Kanban teams often have a backlog for their board. This is where customers and teammates put ideas for projects that the team can pick up when they are ready. The commitment point is the moment when an idea is picked up by the team and work starts on the projec</p>
-    </li>
-    <li>
-      <p>Delivery point — The delivery point is the end of a kanban team’s workflow. For most teams, the delivery point is when the product or service is in the hands of the customer. The team’s goal is to take cards from the commitment point to the delivery point as fast as possible. The elapsed time between the two is the called Lead Time. Kanban teams are continuously improving to decrease their lead time as much as possible.</p>
-    </li>
-  </ol>
-</details>
-
 
 <div align="center">
 <img src="images/Elements_of_a_kanban_board.png" alt="Kanban Board" width="500" height="398">
@@ -165,19 +144,18 @@ This is an example of how to list things you need to use the software and how to
 
 
 
-* Then break the whole board into small `Ui Components` & start building indivisual components.
+* Then break the UI into small `Ui Components` & start building indivisual components.
 <details>
 <summary>Ui Components:</summary>
 <ol>
 <li>
     <details>
-      <summary>Columns, Custom Scrollbar</summary>
+      <summary>Custom Slider, JSColor, Mobile Message</summary>
       <ul>
-        <li>an unordered list is going to hold these 4 columns & each column is going to contain another unordered list which'll hold all the task items.</li>
-        <li>In each column, there'll be a header at top that indicates the type of the column, followed by task items and then at last, two buttons - add-item, save-item and a textbar which'll be hidden by default.</li>
-        <li>Each task item can have a maximum height of 52% of viewport height, so that user can always sees the bottom of the column. </li>
-        <li>If a column contains any task item with very long text, then in that case, a custom-designed scollbar will appear at side to scroll through the task items and at same item user can see whole column.</li>
-        <div align="center"><img src="images/image2.png" alt="Kanban Columns" align="center" width="450" height="300"></div>
+        <li>First of all, we created a navbar of height 50px which take 100% of width of the viewport. Then placed all necessary fontawesome icons inside it and styled them accordingly.</li>
+        <li>Next, our color picker slider looks so ugly, so customized it. [Read more](https://www.w3schools.com/howto/howto_js_rangeslider.asp)</li>
+        <li>Also the color picker for brush, canvas background doesn't look well on all operating systems. So it needs to customised. In this case, I'm using 3rd party library called [jscolor](https://jscolor.com/). I modified some code in the jscolor.js file of that library & styled the input elements as it needs to be.</li>
+        <li>This application is not compatible to work on any mobile devices. So it shows a warning message to user to use larger screen.</li>
       </ul>
     </details>
   </li>
@@ -284,9 +262,9 @@ Project Link: [https://github.com/Prasenjit-3433/Drag-and-Drop](https://github.c
 <!-- references -->
 ## ✌️ References
 
-* [CSS-Tricks: Custom Scrollbar](https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/)
-* [w3schools - HTML Drag and Drop API](https://www.w3schools.com/html/html5_draganddrop.asp)
-* [w3schools - HTML ondragenter Attribute](https://www.w3schools.com/tags/att_ondragenter.asp)
+* [Fontawesome Icons](https://fontawesome.com/icons?d=gallery&m=free)
+* [w3schools - How TO Range Sliders](https://www.w3schools.com/howto/howto_js_rangeslider.asp)
+* [jscolor - Custom Color Picker](https://jscolor.com/)
 * [MDN - Making content editable](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content)
 * [MDN - focusout event](https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event)
 
