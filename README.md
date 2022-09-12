@@ -187,14 +187,14 @@ This is an example of how to list things you need to use the software and how to
   </li>
   <li>
   <details>
-      <summary>Add, Update, Delete an Item</summary>
+      <summary>Storing, Fetching drawing data from localStorage</summary>
     <ul>
-        <li>On the click on `Add Item` button, an inputBox will appear and `add Item` button get vanished by `Save Item` button.</li>
-        <li>Once an user entered his message and press `Save Item`, the message is pushed into localArrays, transferred into localStorage and DOM get updated!.</li>
-        <li>At the time of creating item in the column, we also added contentEditable = true. So that later on, when user click on an item, he is able to edit/delete it.</li>
-        <li>Now when an user click into an item, modified it and then leves the element, then `focusout` event get fired. The focusout event fires when an element is about to lose focus. On the fire of this event, the item is checked for if it does has text or not. If not, then remove it from the corresponding localArray & update the DOM. If it has text, then the current string in the corresponding localArray overwritten by new one & update the DOM.</li>
-        <li>But in the above process, drag-drop functionlity get broken Because when an user click on an item, it's opening to be edited, meaning that the item's text content is in flux. As a result, when user drag it, because the text content is in flux and not saved, it does't have ability to copy it over to another column because it doesn't know what's its own value is.</li>
-        <li>In order to fix this, we need to make sure that an item can be updated only if it is not being dragged. So we create a global variable to keep track whether an item is being dragged or not. At start of drag function, we set it to `true` and at the end of drop function set it back to false.</li>
+        <li>On the fire of [onmousemove](https://www.w3schools.com/jsref/event_onmousemove.asp) event, we store the coordinate of current position in (x, y) form, current brush size, current brush color and current brush type like whether it's a brush or an eraser!.</li>
+        <li>It stores all the above said informations in a global array. This allows to repaint the canvas automatically, otherwise on the change of background color, all the drawings get lost.</li>
+        <li>.</li>
+        <li></li>
+        <li>.</li>
+        <li>.</li>
       </ul>
     </details>
   </li>
