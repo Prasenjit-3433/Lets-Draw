@@ -166,8 +166,9 @@ This is an example of how to list things you need to use the software and how to
       <ul>
         <li>First of all, we need to setup our canvas in javascript. In order to do that, create a canvas element and then call getContent() with param `2d` on it to get Canvas Context which allows us to work with the canvas.</li>
         <li>In JavaScript, I set the `width`, `height` of canvas to window.innerWidth, window.innerHeight - 50 (as 50px is the height of the toolbar at top).</li>
-        <li></li>
-        <li></li>
+        <li>To change background color, it listenes for `change` event to get the new value & then re-create the canvas again.</li>
+        <li>Now for the brush, it listenes for `change` event on the input element of type `range` .i.e. on custom slider to get the user's choosen size of the brush. Also the color for brush is stored in global var so that it can be used on other places as well.</li>
+        <li>Last one is eraser, an erase is nothing just a brush with the same color of the background.</li>
       </ul>
     </details>
     </li>
