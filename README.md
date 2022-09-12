@@ -135,14 +135,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## 🏗️ Implementation
 
-* First of all, we need to gather all `functional requirements` of the Kanban Board. kanban boards can be broken down into five components: `Visual signals`, `columns`, `work-in-progress` limits, a `commitment point`, and a `delivery point`.
-
-
-<div align="center">
-<img src="images/Elements_of_a_kanban_board.png" alt="Kanban Board" width="500" height="398">
-</div> 
-
-
+* First of all, we need to gather all `functional requirements` of a paint type application. A paint application can be broken down into five components: `brush`, `color picker`, `eraser`, `options to save your work`, and most important the `canvas` itself.
 
 * Then break the UI into small `Ui Components` & start building indivisual components.
 <details>
@@ -153,8 +146,8 @@ This is an example of how to list things you need to use the software and how to
       <summary>Custom Slider, JSColor, Mobile Message</summary>
       <ul>
         <li>First of all, we created a navbar of height 50px which take 100% of width of the viewport. Then placed all necessary fontawesome icons inside it and styled them accordingly.</li>
-        <li>Next, our color picker slider looks so ugly, so customized it. [Read more](https://www.w3schools.com/howto/howto_js_rangeslider.asp)</li>
-        <li>Also the color picker for brush, canvas background doesn't look well on all operating systems. So it needs to customised. In this case, I'm using 3rd party library called [jscolor](https://jscolor.com/). I modified some code in the jscolor.js file of that library & styled the input elements as it needs to be.</li>
+        <li>Next, our color picker slider looks so ugly, so customized it.</li>
+        <li>Also the color picker for brush, canvas background doesn't look well on all operating systems. So it needs to customised. In this case, I'm using 3rd party library called jscolor. I modified some code in the jscolor.js file of that library & styled the input elements as it needs to be.</li>
         <li>This application is not compatible to work on any mobile devices. So it shows a warning message to user to use larger screen.</li>
       </ul>
     </details>
@@ -179,9 +172,9 @@ This is an example of how to list things you need to use the software and how to
         <li>Normally 1 unit in the grid corresponds to 1 pixel on the canvas.  The origin of this grid is positioned in the top left corner at coordinate (0,0). All elements are placed relative to this origin. So the position of the top left corner of the blue square becomes x pixels from the left and y pixels from the top, at coordinate (x,y).</li>
         <li>Drawing paths: Now let's look at paths. A path is a list of points, connected by segments of lines that can be of different shapes, curved or not, of different width and of different color. To make shapes using paths, we take some extra steps:</li>
         <li>1. First, you create the path.</li>
-        <li>2. Then you use [drawing commands](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths) to draw into the path</li>
-        <li>3. Once the path has been created, you can stroke or fill the path to render it. [Read more](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#drawing_paths)</li>
-        <li>The brush will listen for [MouseEvent](https://www.w3schools.com/jsref/obj_mouseevent.asp) on the canvas element. Then the drawing will happen when [onmousemove](https://www.w3schools.com/jsref/event_onmousemove.asp) event occus along with between [onmousedown](https://www.w3schools.com/jsref/event_onmousedown.asp) and [onmouseup](https://www.w3schools.com/jsref/event_onmouseup.asp) events.</li>
+        <li>2. Then you use drawing commands to draw into the path</li>
+        <li>3. Once the path has been created, you can stroke or fill the path to render it.</li>
+        <li>The brush will listen for 'MouseEvent' on the canvas element. Then the drawing will happen when 'onmousemove' event occus along with between 'onmousedown' and 'onmouseup' events.</li>
       </ul>
     </details>
   </li>
@@ -189,7 +182,7 @@ This is an example of how to list things you need to use the software and how to
   <details>
       <summary>Storing, Fetching drawing data from localStorage</summary>
     <ul>
-        <li>On the fire of [onmousemove](https://www.w3schools.com/jsref/event_onmousemove.asp) event, we store the coordinate of current position in (x, y) form, current brush size, current brush color and current brush type like whether it's a brush or an eraser!.</li>
+        <li>On the fire of 'onmousemove' event, we store the coordinate of current position in (x, y) form, current brush size, current brush color and current brush type like whether it's a brush or an eraser!.</li>
         <li>It stores all the above said informations in a global array. This allows to repaint the canvas automatically, otherwise on the change of background color, all the drawings get lost.</li>
         <li>Now on the click on `arrow-down` icon, it saves that global array into localStorage.</li>
         <li>Similarly, on the click on `arrow-up` icon, it fetches that global array from localStorage and re-constructs the canvas again.</li>
