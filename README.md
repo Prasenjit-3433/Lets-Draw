@@ -162,12 +162,12 @@ This is an example of how to list things you need to use the software and how to
   </li>
   <li>
     <details>
-      <summary>Connection between DOM & localStorage</summary>
+      <summary>Canvas API</summary>
       <ul>
-        <li>First of all, we set 4 global arrays that'll hold all the contents for each 4 columns.</li>
-        <li>On load of the page, it'll try to fetch data from localStorage if there's any and populate them into those arrays accordingly. Otherwise set some default contents for those 4 arrays.</li>
-        <li>There's another global var to keep track if there's any changes made on those global 4 arrays.</li>
-        <li>Then a function to update DOM. It'll create element for each item in those 4 arrays and insert them into their proper columns accordingly.</li>
+        <li>First of all, we need to setup our canvas in javascript. In order to do that, create a canvas element and then call getContent() with param `2d` on it to get Canvas Context which allows us to work with the canvas.</li>
+        <li>In JavaScript, I set the `width`, `height` of canvas to window.innerWidth, window.innerHeight - 50 (as 50px is the height of the toolbar at top).</li>
+        <li></li>
+        <li></li>
       </ul>
     </details>
     </li>
@@ -265,7 +265,7 @@ Project Link: [https://github.com/Prasenjit-3433/Drag-and-Drop](https://github.c
 * [Fontawesome Icons](https://fontawesome.com/icons?d=gallery&m=free)
 * [w3schools - How TO Range Sliders](https://www.w3schools.com/howto/howto_js_rangeslider.asp)
 * [jscolor - Custom Color Picker](https://jscolor.com/)
-* [MDN - Making content editable](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content)
+* [MDN - Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage)
 * [MDN - focusout event](https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event)
 
 
