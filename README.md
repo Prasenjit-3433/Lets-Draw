@@ -174,16 +174,14 @@ This is an example of how to list things you need to use the software and how to
     </li>
   <li>
     <details>
-      <summary>Drag-&-Drop Feature</summary>
+      <summary>Drawing on Canvas</summary>
       <ul>
-        <li>First of all: To make an element draggable, set the `draggable` attribute to true</li>
-        <li>Then, specify what should happen when the element is dragged. The `ondragstart` attribute calls a function, drag(event), that specifies what data to be dragged. The element is saved into a global var to keep track which element is being dragged and making it global as we need it in drop function as well later on.</li>
-        <li>The ondragover event specifies where the dragged data can be dropped. By default, data/elements cannot be dropped in other elements. To allow a drop, we must prevent the default handling of the element. This is done by calling the event.preventDefault() method for the ondragover event.</li>
-        <li>Do the Drop - ondrop: When the dragged data is dropped, a drop event occurs. Call preventDefault() to prevent the browser default handling of the data (default is open as link on drop).</li>
-        <li>Add these methods on the element by `ondragover`, `ondrop` attributes.</li>
-        <li>It'll be nice to have some visual reference to show that the column is ready to accept the incoming item. So the parent column and drop-target column take the colour of their head as their content's background color.</li>
-        <li>On the fire of `dragenter` event, the parent column and drop-target column changes color & update their content.</li>
-        <li>Finally, each time when an item moved to another column, all the global arrays that contains column data are rebuilt and updated localStrorage.</li>
+        <li>Normally 1 unit in the grid corresponds to 1 pixel on the canvas.  The origin of this grid is positioned in the top left corner at coordinate (0,0). All elements are placed relative to this origin. So the position of the top left corner of the blue square becomes x pixels from the left and y pixels from the top, at coordinate (x,y).</li>
+        <li>Drawing paths: Now let's look at paths. A path is a list of points, connected by segments of lines that can be of different shapes, curved or not, of different width and of different color. To make shapes using paths, we take some extra steps:</li>
+        <li>1. First, you create the path.</li>
+        <li>2. Then you use [drawing commands](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths) to draw into the path</li>
+        <li>3. Once the path has been created, you can stroke or fill the path to render it. [Read more](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#drawing_paths)</li>
+        <li>The brush will listen for [MouseEvent](https://www.w3schools.com/jsref/obj_mouseevent.asp) on the canvas element. Then the drawing will happen when [onmousemove](https://www.w3schools.com/jsref/event_onmousemove.asp) event occus along with between [onmousedown](https://www.w3schools.com/jsref/event_onmousedown.asp) and [onmouseup](https://www.w3schools.com/jsref/event_onmouseup.asp) events.</li>
       </ul>
     </details>
   </li>
@@ -267,7 +265,7 @@ Project Link: [https://github.com/Prasenjit-3433/Drag-and-Drop](https://github.c
 * [w3schools - How TO Range Sliders](https://www.w3schools.com/howto/howto_js_rangeslider.asp)
 * [jscolor - Custom Color Picker](https://jscolor.com/)
 * [MDN - Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage)
-* [MDN - focusout event](https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event)
+* [MDN - Drawing Shapes](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
