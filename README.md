@@ -191,10 +191,9 @@ This is an example of how to list things you need to use the software and how to
     <ul>
         <li>On the fire of [onmousemove](https://www.w3schools.com/jsref/event_onmousemove.asp) event, we store the coordinate of current position in (x, y) form, current brush size, current brush color and current brush type like whether it's a brush or an eraser!.</li>
         <li>It stores all the above said informations in a global array. This allows to repaint the canvas automatically, otherwise on the change of background color, all the drawings get lost.</li>
-        <li>.</li>
-        <li></li>
-        <li>.</li>
-        <li>.</li>
+        <li>Now on the click on `arrow-down` icon, it saves that global array into localStorage.</li>
+        <li>Similarly, on the click on `arrow-up` icon, it fetches that global array from localStorage and re-constructs the canvas again.</li>
+        <li>Last but not least, to download user's drawing, on click on `download` icon, it makes canvas to a DataURL by calling toDataURL on canvas with type 'image/jpeg' and jpeg quality to  '1.0' .i.e. full quality.</li>
       </ul>
     </details>
   </li>
@@ -266,6 +265,7 @@ Project Link: [https://github.com/Prasenjit-3433/Drag-and-Drop](https://github.c
 * [jscolor - Custom Color Picker](https://jscolor.com/)
 * [MDN - Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage)
 * [MDN - Drawing Shapes](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes)
+* [MDN - Canvas to DataURL](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
