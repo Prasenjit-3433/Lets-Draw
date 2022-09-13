@@ -204,9 +204,9 @@ _For more information, visit necessary reference [Link](#%EF%B8%8F-references)_
 <!-- Features -->
 ## 💎 Features
 
-- [ ] **Simple & Clean UI**: The setup provides very simple & clean UI which involves all the minimal necessary tools a user needs to start painting, no other unnecessary tools that makes the UI difficult to use.
-- [ ] **Fast**: This application is built with vanilla JavaScript, no such heavy lifting framework or library like React, Angular. This makes Ui very fast in term of performance.
-- [ ] **Local Storage**: The setup uses browser's Local Storage to store or fetch your work. Since there is database server involved, the process of saving user's work or loading back his previous work is very fast.
+- [ ] **Simple & Clean UI**: The setup provides very simple & clean UI which involves all the minimal necessary tools a user needs to start painting, no other unnecessary tools included that makes the UI difficult to use.
+- [ ] **Fast**: This application is built with vanilla JavaScript, no such heavy lifting framework or library like React, Angular involved. This makes Ui very fast in term of performance.
+- [ ] **Local Storage**: The setup uses browser's Local Storage to store or fetch your work. Since there is no database server involved, the process of saving user's work or loading back his previous work from localStorage is very fast.
 
 See the [open issues](https://github.com/Prasenjit-3433/Lets-Draw/issues) for a full list of proposed features (and known issues).
 
