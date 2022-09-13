@@ -30,23 +30,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Prasenjit-3433/Drag-and-Drop">
-    <img src="images/kanban.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Prasenjit-3433/Lets-Draw">
+    <img src="images/paint.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Kanban Board</h3>
+<h3 align="center">Let's Draw</h3>
 
   <p align="center">
-    A web-based, Kanban-style, project management tool feat. Drag and Drop API, localStorage 😎
+    A free, open-source drawing program feat. HTML Canvas, localStorage 🎨
     <br />
-    <a href="https://github.com/Prasenjit-3433/Drag-and-Drop"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Prasenjit-3433/Lets-Draw"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://kanbanboardjs.netlify.app/">View Demo</a>
+    <a href="https://letsdrawjs.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/Prasenjit-3433/Drag-and-Drop/issues">Report Bug</a>
+    <a href="https://github.com/Prasenjit-3433/Lets-Draw/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Prasenjit-3433/Drag-and-Drop/issues">Request Feature</a>
+    <a href="https://github.com/Prasenjit-3433/Lets-Draw/issues">Request Feature</a>
   </p>
 </div>
 
@@ -85,15 +85,17 @@
 
 <!--  ![Screenshot](images/demo.gif) -->
 <p align="center">
-  <img src="images/demo.gif" alt="animated" />
+  <img src="images/demo.gif" alt="Animated Demo" />
 </p>
 
 
 
 
-"Kanban" is the Japanese word for "visual signal". If you work in services or technology, your work is often times invisible and intangible. A kanban board is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow). It can help both `agile` and `DevOps` teams establish order in their daily work. Kanban boards use cards, columns, and continuous improvement to help technology and service teams commit to the right amount of work, and get it done!
+Let's Draw is a free picture editing/drawing program inspired by MS Paint. Its goal is to provide users with a simple but robust MS Paint alternative with the ability to draw and manipulate pictures on Linux, Mac, and Windows. The program offers a decent basic toolset for creating drawings.
 
-Kanban has come a long way from its origins in lean manufacturing thanks to a small but mighty group of kanban enthusiasts. David Anderson’s work defining the kanban method helped bring kanban into the software and services space, and Personal Kanban, by Jim Benson and Tonianne DeMaria, helped expand the applications of kanban to places you wouldn’t believe. 🔥
+The program enables the user to draw with their free hand on a blank canvas or on a picture in a color of their choice, with plenty of different brush sizes. It supports all major functions, such as coloring, picture editing, special effects, Ps layers, and so on.
+
+You can take advantage of advanced capabilities, like saving your work in browser's localStorage so that even if you leave the application, still your data remains safe, download your work in form of jpeg image. 🔥
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +127,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. First of all install `Live Server` extension by `Ritwick Dey`.
 2. Once the extension was installed, then `right-click` on `index.html` and select `Open with Live Server`.
-3. It'll open a new tab in browser & start serving the Kanban Board. Enjoy!.
+3. It'll open a new tab in browser & start serving the Paint App. Enjoy!.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -202,11 +204,11 @@ _For more information, visit necessary reference [Link](#%EF%B8%8F-references)_
 <!-- Features -->
 ## 💎 Features
 
-- [ ] **Flexibility**: Digital Kanban boards allow teams that do not share a physical office space to use kanban boards remotely and asynchronously. The setup involves just a few clicks to create digital lists, which represent the stages of your kanban process, on a board view that your whole team can access and manage.
-- [ ] **Drag and Drop**: Once can move a task from one stage to another stage by just dragging and dropping the card.
-- [ ] **Local Storage**: The setup uses browser's Local Storage to store the digital for faster data fetching. Even if the browser or tab get closed, all the data remain safe!. So that on the next page load, the board gets back to its previous state.
+- [ ] **Simple & Clean UI**: The setup provides very simple & clean UI which involves all the minimal necessary tools a user needs to start painting, no other unnecessary tools that makes the UI difficult to use.
+- [ ] **Fast**: This application is built with vanilla JavaScript, no such heavy lifting framework or library like React, Angular. This makes Ui very fast in term of performance.
+- [ ] **Local Storage**: The setup uses browser's Local Storage to store or fetch your work. Since there is database server involved, the process of saving user's work or loading back his previous work is very fast.
 
-See the [open issues](https://github.com/Prasenjit-3433/Drag-and-Drop/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Prasenjit-3433/Lets-Draw/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -244,7 +246,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Prasenjit Sutradhar - [@twitter_handle](https://twitter.com/twitter_handle) - prasenjitsutradhar3433@gmail.com
 
-Project Link: [https://github.com/Prasenjit-3433/Drag-and-Drop](https://github.com/Prasenjit-3433/Drag-and-Drop)
+Project Link: [https://github.com/Prasenjit-3433/Lets-Draw](https://github.com/Prasenjit-3433/Lets-Draw)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -261,22 +263,23 @@ Project Link: [https://github.com/Prasenjit-3433/Drag-and-Drop](https://github.c
 * [MDN - Canvas to DataURL](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)
 
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Prasenjit-3433/Drag-and-Drop.svg?style=for-the-badge
-[contributors-url]: https://github.com/Prasenjit-3433/Drag-and-Drop/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Prasenjit-3433/Drag-and-Drop.svg?style=for-the-badge
-[forks-url]: https://github.com/Prasenjit-3433/Drag-and-Drop/network/members
-[stars-shield]: https://img.shields.io/github/stars/Prasenjit-3433/Drag-and-Drop.svg?style=for-the-badge
-[stars-url]: https://github.com/Prasenjit-3433/Drag-and-Drop/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Prasenjit-3433/Drag-and-Drop.svg?style=for-the-badge
-[issues-url]: https://github.com/Prasenjit-3433/Drag-and-Drop/issues
-[license-shield]: https://img.shields.io/github/license/Prasenjit-3433/Drag-and-Drop.svg?style=for-the-badge
-[license-url]: https://github.com/Prasenjit-3433/Drag-and-Drop/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Prasenjit-3433/Lets-Draw.svg?style=for-the-badge
+[contributors-url]: https://github.com/Prasenjit-3433/Lets-Draw/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Prasenjit-3433/Lets-Draw.svg?style=for-the-badge
+[forks-url]: https://github.com/Prasenjit-3433/Lets-Draw/network/members
+[stars-shield]: https://img.shields.io/github/stars/Prasenjit-3433/Lets-Draw.svg?style=for-the-badge
+[stars-url]: https://github.com/Prasenjit-3433/Lets-Draw/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Prasenjit-3433/Lets-Draw.svg?style=for-the-badge
+[issues-url]: https://github.com/Prasenjit-3433/Lets-Draw/issues
+[license-shield]: https://img.shields.io/github/license/Prasenjit-3433/Lets-Draw.svg?style=for-the-badge
+[license-url]: https://github.com/Prasenjit-3433/Lets-Draw/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://in.linkedin.com/
 [product-screenshot]: images/screenshot.png
